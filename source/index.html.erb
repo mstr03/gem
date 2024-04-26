@@ -1,25 +1,149 @@
 ---
 title: Strategia GEM
 ---
+<h1>Strategia GEM 💎</h1>
 
-<h1>
-  Strategia GEM
-</h1>
-
-<h2>Wyniki za ostatnie 12 miesięcy:</h2>
-<div style="overflow-x:auto;">
-  <table>
-    <tr>
-      <th>Data sygnału</th>
-      <th>SPXS.UK</th>
-      <th>VEU</th>
-    </tr>
-    <% data.results.each do |date| %>
-    <tr>
-      <td><%= date.first %></td>
-      <td><%= date.second.spx %></td>
-      <td><%= date.second.bug %></td>
-    </tr>
-    <% end %>
-  </table>
+<div class="container">
+  <div class="description">
+    <p>Strategia GEM (ang. Global Equities Momentum) jest strategią inwestycyjną opracowaną przez Gary'ego Antonacciego. Jest to strategia oparta na zasadzie momentum, która polega na inwestowaniu w aktywa, które wykazują silny wzrost cenowy w określonym okresie czasu, i unikaniu tych, które wykazują słaby wzrost lub spadek cen.</p>
+    <p>Podstawową ideą strategii GEM jest wykorzystanie trendów cenowych na globalnych rynkach akcji do podejmowania decyzji inwestycyjnych. W ramach tej strategii inwestor monitoruje zachowanie cen aktywów na różnych rynkach na całym świecie i wybiera te aktywa, które wykazują najlepsze wyniki w określonym okresie. Następnie inwestuje w te aktywa, oczekując kontynuacji trendu wzrostowego.</p>
+    <p>Strategia GEM jest często stosowana przez inwestorów poszukujących możliwości dywersyfikacji portfela inwestycyjnego oraz generowania nadzwyczajnych zwrotów przy umiarkowanym poziomie ryzyka. Jednakże, jak każda strategia inwestycyjna, również GEM ma swoje zalety i wady, a jej skuteczność może być uzależniona od wielu czynników, takich jak warunki rynkowe, techniki analizy, czy stopień dywersyfikacji portfela.</p>
+  </div>
 </div>
+
+<div class="container">
+  <div class="description">
+    <h3>Reguły</h3>
+    <ul>
+      <li><p>Co miesiąc przeprowadzamy analizę, sprawdzając, czy stopa zwrotu z akcji amerykańskich (indeks S&P 500) oraz akcji globalne bez USA za ostatnie 12 miesięcy przewyższa tzw. stopę wolną od ryzyka, reprezentowaną np. przez obligacje skarbowe USA, czyli ekwiwalent lokaty w banku.</p></li>
+      <li><p>Jeśli stopa zwrotu z S&P 500 i akcji globalnych bez USA jest niższa niż stopa zwrotu z obligacji w ciągu ostatnich 12 miesięcy, nie ma sensu utrzymywać akcji w portfelu. W takim przypadku możemy osiągnąć wyższe zyski przy mniejszym ryzyku poprzez inwestowanie w obligacje lub bony skarbowe.</p></li>
+      <li><p>Jeśli stopa zwrotu z S&P 500 i/lub akcji globalnych bez USA jest wyższa niż stopa zwrotu z obligacji, oznacza to, że rynek akcji przeżywa trend wzrostowy, co skłania nas do posiadania akcji w portfelu. Następnie sprawdzamy, które z tych dwóch rynków wygenerowało wyższą stopę zwrotu w ciągu ostatnich 12 miesięcy: czy to akcje amerykańskie (S&P 500), czy rynki wschodzące. Inwestujemy w indeks, który osiągnął wyższą stopę zwrotu.</p></li>
+    </ul>
+
+    <h3>Kluczowe kwestie</h3>
+    <ul>
+      <li><p>Strategia jest ukierunkowana na długoterminowe inwestycje, a nie na spekulację krótkoterminową. Inwestorzy mogą utrzymywać swoje pozycje przez wiele lat, korzystając z potencjalnych korzyści związanych ze wzrostem rynku akcji i obowiązków w długim terminie.</p></li>
+      <li><p>Inwestor określa okres, na którym będzie bazować swoje decyzje inwestycyjne. Najczęściej stosowanymi okresami są 12 miesięcy, 6 miesięcy lub 3 miesiące, ale może to być dostosowane do indywidualnych preferencji.</p></li>
+      <li><p>Na koniec każdego okresu obserwacji (np. co miesiąc, przy czym zawsze musi to być ten sam dzień miesiąca), inwestor rankinguje aktywa na podstawie ich wzrostu cenowego w danym okresie.</p></li>
+      <li><p>Istotną częścią strategii GEM jest zachowanie dyscypliny i konsekwencji w realizacji reguł strategii, bez podejmowania decyzji na podstawie emocji czy chwilowych impulsów rynkowych.</p></li>
+    </ul>
+  </div>
+</div>
+
+<div class="container">
+  <div class="description">
+    <h3>Wykorzystywane ETF-y (propozycja)</h3>
+    <ol>
+      <li><p><b>S&P 500 - Invesco S&P 500 UCITS ETF (SPXS.UK)</b></p></p>
+      <li><p><b>Akcje globalne bez USA - Vanguard FTSE All World ex US ETF (VEU.US)</b>. Z uwagi na to, że ETF ten nie jest dostępny na rynku europejskim, stanowi on wyłącznie wskaźnik do potencjalnej zmiany w portfelu. Komponent zawierający akcje globalne bez USA można spróbować złożyć z dwóch innych ETF-ów np. na akcje rynków rozwiniętych bez USA (<b>Xtrackers MSCI World ex USA UCITS ETF 1C</b> - jedyny dostępny taki ETF) oraz na akcje rynków wschodzących (<b>iShares Core MSCI Emerging Markets IMI UCITS ETF 1C</b>). Taki komponent powinien odwzorowywać benchmark FTSE All World ex-US, który naśladuje VEU.US.</p></p>
+      <li><p><b>Bony skarbowe - iShares USD Treasury Bond 0-1yr UCITS ETF (IB01.LSE)</b></p></p>
+    </ol>
+  </div>
+</div>
+
+<div class="container">
+  <div class="description">
+    <h4>Adnotacja</h4>
+    <p>Ponżiej przedstawione są wyniki dla strategii w okresach 12, 6 i 3 miesięcy. Kolorem zielonym oznaczona jest komórka dla ETF-u, w który należy zainwestować zgodnie ze strategią. Wyniki aktualizowane są codziennie w nocy, a zatem przedstawiają stan faktyczny na dzień poprzedzający. Wskazane jest podejmowanie działań w portfelu zawsze w wybrany dzień miesiąca np. chcąc inwestować w ostatni dzień miesiąca należy sprawdzić sygnały w ostatni dzień roboczy miesiąca, podczas którego jest otwarta giełda.</p>
+  </div>
+</div>
+
+<div class="container">
+  <div class="section">
+    <h2>Wyniki za ostatnie 12 miesięcy:</h2>
+    <div class='signal-table' style="overflow-x:auto;">
+      <table id='table_12_months'>
+        <tr>
+          <th>Data sygnału</th>
+          <th>SPXS.UK</th>
+          <th>VEU.US</th>
+          <th>IB01.LSE</th>
+        </tr>
+        <% data.percentage_change_12_months.each do |date| %>
+        <tr>
+          <td><%= date.first %></td>
+          <td><%= date.second["SPXS.LSE"] %>%</td>
+          <td><%= date.second["VEU.US"] %>%</td>
+          <td><%= date.second["IB01.LSE"] %>%</td>
+        </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Wyniki za ostatnie 6 miesięcy:</h2>
+    <div class='signal-table' style="overflow-x:auto;">
+      <table id='table_6_months'>
+        <tr>
+          <th>Data sygnału</th>
+          <th>SPXS.UK</th>
+          <th>VEU.US</th>
+          <th>IB01.LSE</th>
+        </tr>
+        <% data.percentage_change_6_months.each do |date| %>
+        <tr>
+          <td><%= date.first %></td>
+          <td><%= date.second["SPXS.LSE"] %>%</td>
+          <td><%= date.second["VEU.US"] %>%</td>
+          <td><%= date.second["IB01.LSE"] %>%</td>
+        </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Wyniki za ostatnie 3 miesięcy:</h2>
+    <div class='signal-table' style="overflow-x:auto;">
+      <table id='table_3_months'>
+        <tr>
+          <th>Data sygnału</th>
+          <th>SPXS.UK</th>
+          <th>VEU.US</th>
+          <th>IB01.LSE</th>
+        </tr>
+        <% data.percentage_change_3_months.each do |date| %>
+        <tr>
+          <td><%= date.first %></td>
+          <td><%= date.second["SPXS.LSE"] %>%</td>
+          <td><%= date.second["VEU.US"] %>%</td>
+          <td><%= date.second["IB01.LSE"] %>%</td>
+        </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>
+
+<script>
+  function findHighestCellIndex(row) {
+    let highestValue = Number.NEGATIVE_INFINITY;
+    let highestIndex = -1;
+
+    for (let i = 1; i < row.cells.length; i++) {
+      let cellValue = parseFloat(row.cells[i].textContent);
+      if (!isNaN(cellValue) && cellValue > highestValue) {
+        highestValue = cellValue;
+        highestIndex = i;
+      }
+    }
+
+    return highestIndex;
+  }
+
+  function highlightHighestCells(tableId) {
+    let table = document.getElementById(tableId);
+
+    for (let i = 1; i < table.rows.length; i++) {
+      let rowIndex = findHighestCellIndex(table.rows[i]);
+      if (rowIndex !== -1) {
+        table.rows[i].cells[rowIndex].style.backgroundColor = '#e5f7ea'; // Light green color
+      }
+    }
+  }
+
+  highlightHighestCells('table_12_months');
+  highlightHighestCells('table_6_months');
+  highlightHighestCells('table_3_months');
+</script>

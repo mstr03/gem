@@ -40,7 +40,18 @@ page '/*.txt', layout: false
 # Build-specific configuration
 # https://middlemanapp.com/advanced/configuration/#environment-specific-settings
 
-# configure :build do
-#   activate :minify_css
-#   activate :minify_javascript, compressor: Terser.new
+configure :build do
+  activate :minify_css
+  activate :minify_javascript, compressor: Terser.new
+end
+
+# activate :deploy do |deploy|
+#   deploy.method = :rsync
+#   deploy.host          = '95.217.152.152'
+#   deploy.path          = '/home/stary/gem'
+#   # Optional Settings
+#   # deploy.user  = 'tvaughan' # no default
+#   # deploy.port  = 5309 # ssh port, default: 22
+#   # deploy.clean = true # remove orphaned files on remote host, default: false
+#   # deploy.flags = '-rltgoDvzO --no-p --del' # add custom flags, default: -avz
 # end
