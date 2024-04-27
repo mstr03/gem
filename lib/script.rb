@@ -37,9 +37,9 @@ current_month = Date.today.strftime("%m")
 current_year = Date.today.strftime("%Y")
 
 to_date = Date.today.strftime("%Y-%m-%d")
-from_date_12_months = (Date.today - 12 * 30).strftime("%Y-%m-%d")
-from_date_6_months = (Date.today - 6 * 30).strftime("%Y-%m-%d")
-from_date_3_months = (Date.today - 3 * 30).strftime("%Y-%m-%d")
+from_date_12_months = (Date.today.prev_year).strftime("%Y-%m-%d")
+from_date_6_months = (Date.today.prev_month(6)).strftime("%Y-%m-%d")
+from_date_3_months = (Date.today.prev_month(3)).strftime("%Y-%m-%d")
 
 results_12_months = {}
 results_6_months = {}
