@@ -77,7 +77,7 @@ file_paths.each do |period, file_path|
 
   existing_data = Hash["#{current_month}-#{current_year}", results_12_months].merge!(existing_data) if period == "12_months"
   existing_data = Hash["#{current_month}-#{current_year}", results_6_months].merge!(existing_data) if period == "6_months"
-  existing_data =Hash["#{current_month}-#{current_year}", results_3_months].merge!(existing_data) if period == "3_months"
+  existing_data = Hash["#{current_month}-#{current_year}", results_3_months].merge!(existing_data) if period == "3_months"
 
   File.open(file_path, 'w') { |file| file.write(existing_data.to_yaml) }
 end
