@@ -79,5 +79,9 @@ file_paths.each do |period, file_path|
   existing_data = Hash["#{current_month}-#{current_year}", results_6_months].merge!(existing_data) if period == "6_months"
   existing_data = Hash["#{current_month}-#{current_year}", results_3_months].merge!(existing_data) if period == "3_months"
 
-  File.open(file_path, 'w') { |file| file.write(existing_data.to_yaml) }
+  sorted_data = existing_data.sort_by do |key, _|
+    Date.strptime(key.to_s, "%m-%Y")
+  end.reverse.to_h
+
+  File.open(file_path, 'w') { |file| file.write(sorted_data.to_yaml) }
 end
